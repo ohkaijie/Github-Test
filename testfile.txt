@@ -1,0 +1,67 @@
+#Github Tutorial
+
+Tutorial from https://www.youtube.com/watch?v=73I5dRucCds
+==================================================
+#Specify GitHub user name
+ git config --global user.name "ohkaijie"
+
+#Specify GitHub email address associated with the user name
+ git config --global user.email "ohkaijie@gmail.com"
+
+#To copy "Githb-Test" git file from repository
+ git clone https://github.com/ohkaijie/Github-Test.git
+ 
+#To change current folder as Github-Test folder
+ cd Github-Test
+
+#To edit "Readme.md" file by using VIM
+vim README.md
+
+#To check is there any changes made
+git status
+
+#To add "README.md" into server
+git add README.md
+
+#To commit the updates made into repository
+git commit -m "updated readme file for better description"
+
+#To show log of activities reading any commit made
+git log
+
+#To add a remote origin
+git remote add origin https://github.com/ohkaijie/Github-Test.git
+
+#To publish your local commits in targeted origin of master branch
+git push -u origin master
+
+#create a local file named "textfile.txt"
+touch testfile.txt
+
+#edit the testfile.txt
+vim testfile.txt
+
+#Use git status check any untracked files
+git status
+
+#Add all untracked files onto servers (Use '.' to add all untrack files)
+git add .
+
+#Add a description for the untracked files (-m means the message) 
+git commit -m "Testfile.txt with tutorial commands is added as a test"
+
+#Check all commited files in detailed
+git log
+
+#Check again is there still anything to commit
+git status
+
+#To publish your local commits 
+git push
+
+#To compare and update to local drive if there is any branches or 
+# any changes made by another partner on the repo
+Git pull origin master
+
+
+
